@@ -51,7 +51,7 @@ function atualizaTabela() {
 function atualizaMediaFinal() {
     const mediafinal = calculaMediaFinal();
 
-    document.getElementById('media-final-valor').innerHTML = mediafinal; //Vai adicionar o valor da media final no html
+    document.getElementById('media-final-valor').innerHTML = mediafinal.toFixed(2); //Vai adicionar o valor da media final no html com apenas duas casas amostra 
     document.getElementById('media-final-resultado').innerHTML = mediafinal >= 7 ? spanAprovado : spanReprovado; //Dando o resultado com ternarios
 }
 
