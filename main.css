@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family:'Roboto', sans-serif; /* todas as fontes serão essa */
+}
+body{
+    background-color: #E7E7E7;
+    padding-top: 100px; /*ajustando o espaçamento de topo da pagina */ 
+}
+
+/* Estilização do cabeçalho */
+
+header{
+    display: flex; /* para os elementos ficarem um ao lado do outro */
+    align-items:center; /* para eles ficarem na vertical */
+    margin-bottom:40px; /* aplicar margin inferior para separar o cabeçalho do formulario */
+}
+
+header img { /* ajustando o tamanho da imagem no cabeçalho */
+    height: 100px; /* tamanho da imagem */
+    margin-right: 10px; /* o afastamento dela  */
+}
+
+header h1 { /* ajustando o tamano da fonte e o formato negrito */
+    font-size: 40px; /* tamanho da fonte no h1 */
+    font-weight: bold; /* tipo negrito */
+}
+
+/* Estilização para o navegador */
+
+.container{  /* ajustando todo o contuedo do body */
+    max-width: 960px; /* area maxima ocupando a tela */
+    width: 100%;  /* ele vai ocupar 100% dos 960px deixando o conteudo centralizado*/
+    margin: 0 auto; /* para centrlizar na horizontal */
+}
+
+/* bloco de estilização do formulario */
+
+form{
+    display: flex; /*deixando os campos e o botão alinhados igualmente*/
+    max-width: 640px; /*area deles maxima */
+    width: 100%; /* ocupar toda area maxima */
+    justify-content:space-between; /* destribuir espaçamento entre os itens */
+    margin-bottom: 56px; /* espaçamento entre os campos e o formulario */
+}
+
+form input { /* estilizando os campos de texto e numero */
+    font-size: 24px; /* o tamanho da fonte digitado nos campos */
+    background-color:#fff; /* cor de fundo dos campos*/
+    border: none; /* removendo as bordas dos campos */
+    border-bottom: 2px solid #000; /* adicionando uma "linhazinha" preta na parte inferior dos campos */
+    padding: 8px; /* aumento do tamanho do camapo */
+}
+
+form button { /* estilizando o botão de adicionar */
+    background-color: #009432; /* cor de fundo do botão */
+    color: #fff; /* cor das letras  */
+    font-size: 24px; /* tamnho da fonte  */
+    font-weight: bold; /* tipo negrito */
+    border: none; /* romevendo a borda do botão*/
+    cursor: pointer; /* o ponteiro quando estiver encima do botão vai aparecer a maozinha */
+    padding: 8x; /* espaçamento entre o campo de nota e o botão */
+}
+/* estilizando a tebela*/
+
+table { 
+    width: 100%; /* largura da tabela */
+}
+
+table th {  /* estilizando as linhas  */
+    border-bottom: 2px solid #000; /* estilizando as linhas da tabela */
+    padding: 16px; /* espaçamento entre o texto da tabela e as linhas */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td { /* estilizando o corpo da tabela como as atividades e notas */
+    padding: 16px 0; /* separação entre a linha superior e inferir do conteudo da tabela  */
+    text-align: center; /* alinhando o texto na tabela */
+    font-size: 18px; /* tamanho da fonte dentro da tabela */
+    border-bottom: 1px solid rgba(0,0,0,0.2); /* dando cor as linhas internas da tabela  */
+}
+
+table td img { /* estlizando a imagem que fica dentro da tabela */
+    height: 30px; /* tamanho da imagem de resultado da media */
+}
+
+.resultado { /* estilizando o resultando das notas */
+    padding: 8px; /* tamanho da area do resultado */
+    font-weight: bold; /* fonte do resultado */
+    color: white; /* cor da letra */
+    background-color: black; /* cor de fundo do resultado */
+    border-radius: 3px; /* deixando a bordar redonda*/
+}
+
+.aprovado { /* Estilização de quando o resultado for de aprovado */
+    background-color: #009432;
+}
+
+.reprovado{ /* Estilização de quando o resultado for de reprovado */
+    background-color: red;
+}
